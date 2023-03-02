@@ -1,0 +1,11 @@
+{
+  "files": {
+    "main.js": "/gh-search-repo/static/js/main.edc96629.js",
+    "static/media/error.gif": "/gh-search-repo/static/media/error.42292aa12b6bc303ce99.gif",
+    "index.html": "/gh-search-repo/index.html",
+    "main.edc96629.js.map": "/gh-search-repo/static/js/main.edc96629.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.edc96629.js"
+  ]
+}
