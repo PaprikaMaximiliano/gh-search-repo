@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { styled, TextField, Autocomplete } from '@mui/material';
 import { connect } from 'react-redux';
 import { changeLanguage, fetchData } from '../actions';
-import store from '../store';
 import languages from '../languages';
 
 const debounce = require('lodash.debounce');
@@ -39,7 +38,6 @@ function Search({ dispatch, language }) {
             return;
         }
         dispatch(changeLanguage(lang));
-        console.log('store', store.getState());
     };
 
     const onEnterRepoTitle = (e) => {
