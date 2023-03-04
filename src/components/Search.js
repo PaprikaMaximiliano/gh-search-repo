@@ -3,17 +3,8 @@ import { styled, TextField, Autocomplete } from '@mui/material';
 import { connect } from 'react-redux';
 import { changeLanguage, fetchData } from '../actions';
 import store from '../store';
-// import {fetchData} from "../actions/repoActions";
+import languages from "../languages";
 
-const langs = [
-    'Python',
-    'C',
-    'C++',
-    'Java',
-    'C#',
-    'Visual Basic',
-    'Javascript',
-];
 
 const debounce = require('lodash.debounce');
 
@@ -71,7 +62,7 @@ function Search({ dispatch, language }) {
             <DropdownLanguages
                 disablePortal
                 id="combo-box-demo"
-                options={langs}
+                options={languages}
                 renderInput={(params) => (
                     <TextField {...params} label="Languages" />
                 )}
