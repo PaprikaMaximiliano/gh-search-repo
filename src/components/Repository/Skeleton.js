@@ -1,7 +1,7 @@
 import React from 'react';
-import CardContent from "@mui/material/CardContent";
-import Typography from "@mui/material/Typography";
-import Card from "@mui/material/Card";
+import CardContent from '@mui/material/CardContent';
+import Typography from '@mui/material/Typography';
+import Card from '@mui/material/Card';
 
 function Skeleton() {
     return (
@@ -11,7 +11,6 @@ function Skeleton() {
                     color="text.primary"
                     variant="h5"
                     title="Name of repository"
-
                 >
                     Please enter name of repository
                 </Typography>

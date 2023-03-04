@@ -7,7 +7,7 @@ import Repository from './Repository/Repository';
 function App({ language, repository, isLoading, error }) {
     return (
         <div className="App">
-            <Grid container justifyContent="center" marginTop={'3%'}  >
+            <Grid container justifyContent="center" marginTop={'3%'}>
                 <Grid item lg={6} sm={9} xs={11}>
                     <Search language={language} />
                     <Repository

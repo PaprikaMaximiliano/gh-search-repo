@@ -26,7 +26,7 @@ const FlexContainer = styled('div')({
 
 const RightMargin = styled('div')({
     marginRight: '4%',
-    display: 'flex'
+    display: 'flex',
 });
 function Repository({ repository, isLoading, error }) {
     const skeleton = repository || isLoading || error ? null : <Skeleton />;
@@ -87,7 +87,11 @@ const View = ({ repository }) => {
                         {description}
                     </Typography>
                     <Typography
-                        sx={{ fontSize: '17px', fontWeight: 'bold', marginBottom: '4%' }}
+                        sx={{
+                            fontSize: '17px',
+                            fontWeight: 'bold',
+                            marginBottom: '4%',
+                        }}
                         gutterBottom
                     ></Typography>
                     <FlexContainer>
@@ -109,7 +113,6 @@ const View = ({ repository }) => {
                     </FlexContainer>
                 </CardContent>
                 <CardActions>
-
                     <Button href={html_url} target="_blank" size="small">
                         Learn More
                     </Button>

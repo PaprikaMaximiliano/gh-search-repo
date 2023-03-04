@@ -3,8 +3,7 @@ import { styled, TextField, Autocomplete } from '@mui/material';
 import { connect } from 'react-redux';
 import { changeLanguage, fetchData } from '../actions';
 import store from '../store';
-import languages from "../languages";
-
+import languages from '../languages';
 
 const debounce = require('lodash.debounce');
 
@@ -15,17 +14,17 @@ const FormRowWrapper = styled('div')({
     justifyContent: 'space-between',
     margin: '8px 0 0px 0',
     '@media (max-width: 400px)': {
-        display: 'block'
-    }
+        display: 'block',
+    },
 });
 
 const InputText = styled(TextField)({
     flex: '0 0 50%',
     marginRight: '8px',
     '@media (max-width: 400px)': {
-        width:"100%",
-        marginBottom: "5%"
-    }
+        width: '100%',
+        marginBottom: '5%',
+    },
 });
 
 const DropdownLanguages = styled(Autocomplete)({

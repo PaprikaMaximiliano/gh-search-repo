@@ -1,5 +1,5 @@
 export * from './languageActions';
-export * from './repoActions'
+export * from './repoActions';
 export const CONSTANTS = {
     SEARCH_REPO: 'SEARCH_REPO',
     CHANGE_LANGUAGE: 'CHANGE_LANGUAGE',
