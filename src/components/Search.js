@@ -65,9 +65,7 @@ function Search({ dispatch, language }) {
                 renderInput={(params) => (
                     <TextField {...params} label="Languages" />
                 )}
-                // value={language}
                 onChange={(e, value) => {
-                    console.log(value);
                     onChooseLanguage(title, value);
                 }}
             />

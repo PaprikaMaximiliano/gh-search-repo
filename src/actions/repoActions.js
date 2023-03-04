@@ -42,7 +42,6 @@ export const fetchData = (title, language) => {
             if (!data) {
                 dispatch(fetchDataFailure());
             }
-            console.log(data);
             dispatch(fetchDataSuccess(data));
         } catch (error) {
             dispatch(fetchDataFailure());
