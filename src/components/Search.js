@@ -35,7 +35,6 @@ function Search({ dispatch, language }) {
     const onChooseLanguage = (title, lang) => {
         if (title) {
             dispatch(fetchData(title, lang));
-            return;
         }
         dispatch(changeLanguage(lang));
     };
